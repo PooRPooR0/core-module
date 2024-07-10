@@ -1,8 +1,7 @@
 {
   "name": "core",
   "version": "1.0.0",
-  "description": "this is score module",
-  "main": "index.tsx",
+  "description": "this is core module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,6 +9,12 @@
   "license": "ISC",
   "dependencies": {
     "@mantine/core": "^7.11.1",
-    "@mantine/hooks": "^7.11.1"
+    "@mantine/hooks": "^7.11.1",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.24.1",
+    "typescript": "^5.5.3"
   }
 }

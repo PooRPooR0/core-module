@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Component = () => {
+const MainPage = () => {
     return (
         <div>
-            zxc
+            core main page
         </div>
     );
 };
 
-export default Component;
+export default MainPage;
