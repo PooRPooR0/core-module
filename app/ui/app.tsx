@@ -1,10 +1,12 @@
 import React from 'react';
+import {Stack, Text} from "@mantine/core";
 
 const App = () => {
     return (
-        <div>
-            this is app
-        </div>
+        <Stack>
+            <Text>zxc</Text>
+            <Text>core</Text>
+        </Stack>
     );
 };
 
