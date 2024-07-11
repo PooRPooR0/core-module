@@ -1,11 +1,6 @@
-import {createBrowserRouter, RouteObject} from "react-router-dom";
-import {MainPage} from "../../pages/main";
-
-const routes: RouteObject[] = [{
-    path: '/',
-    element: <MainPage/>
-}]
+import {createBrowserRouter} from "react-router-dom";
+import {routes} from "CustomCore/app";
 
 const router = createBrowserRouter(routes)
 
-export {routes, router}
+export {router}
