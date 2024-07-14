@@ -1,5 +1,5 @@
-import { call, put, takeEvery, takeLatest } from 'redux-saga/effects'
-import {changePostsLoading, getPosts, receivePosts} from "CustomCore/entities/post";
+import {call, put} from "redux-saga/effects";
+import {changePostsLoading, receivePosts} from "CustomCore/entities/post";
 
 function* getPostsSaga() {
     try {
@@ -13,6 +13,4 @@ function* getPostsSaga() {
     }
 }
 
-export default function* postSaga() {
-    yield takeLatest(getPosts, getPostsSaga)
-}
+export default getPostsSaga;

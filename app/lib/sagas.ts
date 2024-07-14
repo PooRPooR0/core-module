@@ -1,7 +1,7 @@
-import postSaga from "CustomCore/entities/post/api/post-saga";
+import {postRootSaga} from "CustomCore/entities/post";
 
 const sagas = [
-    postSaga()
+    postRootSaga()
 ]
 
 export default sagas;

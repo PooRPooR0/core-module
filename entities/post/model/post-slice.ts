@@ -1,37 +1,12 @@
-import {createSlice, PayloadAction} from "@reduxjs/toolkit";
-import {Post} from 'CustomCore/entities/post';
-
-type SliceType = {
-    data: Array<Post>,
-    loading: boolean,
-}
-
-const initialState: SliceType = {
-    data: [],
-    loading: false,
-}
-
-const reducers = {
-    getPosts: (state: SliceType) => ({
-        ...state,
-        loading: true,
-    }),
-    receivePosts: (state: SliceType, {payload}: PayloadAction<Array<Post>>) => ({
-        ...state,
-        loading: false,
-        data: payload,
-    }),
-    changePostsLoading: (state: SliceType, {payload}: PayloadAction<boolean>) => ({
-        ...state,
-        loading: payload,
-    })
-}
+import {createSlice} from "@reduxjs/toolkit";
+import {PostSliceInitialState} from 'CustomCore/entities/post/model/post-slice-initial-state';
+import PostSliceReducers from 'CustomCore/entities/post/model/post-slice-reducers';
 
 const postSlice = createSlice({
     name: "post",
-    initialState,
-    reducers: reducers
+    initialState: PostSliceInitialState,
+    reducers: PostSliceReducers
 });
 
 export default postSlice.reducer;
-export const {getPosts, receivePosts, changePostsLoading} = postSlice.actions;
+export const PostSliceActions = postSlice.actions;
