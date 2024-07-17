@@ -1,7 +1,7 @@
-import App from 'CustomCore/app/ui/app'
-import {router} from 'CustomCore/app/lib/router';
-import routes from 'CustomCore/app/lib/routes';
-import sagas from 'CustomCore/app/lib/sagas';
+import App from '@src/app/ui/app'
+import {router} from '@src/app/lib/router';
+import routes from '@src/app/lib/routes';
+import sagas from '@src/app/lib/sagas';
 
 export {App}
 export {routes}

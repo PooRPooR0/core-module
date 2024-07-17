@@ -1,6 +1,6 @@
 import {createSlice} from "@reduxjs/toolkit";
-import {PostSliceInitialState} from 'CustomCore/entities/post/model/post-slice-initial-state';
-import PostSliceReducers from 'CustomCore/entities/post/model/post-slice-reducers';
+import {PostSliceInitialState} from '@src/entities/post/model/post-slice-initial-state';
+import PostSliceReducers from '@src/entities/post/model/post-slice-reducers';
 
 const postSlice = createSlice({
     name: "post",

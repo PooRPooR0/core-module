@@ -1,5 +1,5 @@
-import Post from "CustomCore/entities/post/lib/post";
-import {PostSliceType} from "CustomCore/entities/post/model/post-slice-initial-state";
+import Post from "@src/entities/post/lib/post";
+import {PostSliceType} from "@src/entities/post/model/post-slice-initial-state";
 import {PayloadAction} from "@reduxjs/toolkit";
 
 const PostSliceReducers = {

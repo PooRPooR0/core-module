@@ -1,9 +1,9 @@
 import React, {useEffect} from 'react';
 import {Link} from "react-router-dom";
-import * as classes from 'CustomCore/pages/main/ui/main-page.module.css'
-import {a} from "CustomCore/pages/main";
+import * as classes from '@src/pages/main/ui/main-page.module.css'
+import {a} from "@src/pages/main";
 import {connect} from "react-redux";
-import {getPosts, Post} from "CustomCore/entities/post";
+import {getPosts, Post} from "@src/entities/post";
 
 interface MainPageProps {
     posts: Array<Post>;

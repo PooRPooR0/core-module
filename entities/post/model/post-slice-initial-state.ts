@@ -1,4 +1,4 @@
-import Post from "CustomCore/entities/post/lib/post";
+import Post from "@src/entities/post/lib/post";
 
 export type PostSliceType = {
     data: Array<Post>,

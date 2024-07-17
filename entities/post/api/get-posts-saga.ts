@@ -1,5 +1,5 @@
 import {call, put} from "redux-saga/effects";
-import {changePostsLoading, receivePosts} from "CustomCore/entities/post";
+import {changePostsLoading, receivePosts} from "@src/entities/post";
 
 function* getPostsSaga() {
     try {

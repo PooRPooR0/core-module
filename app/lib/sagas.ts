@@ -1,4 +1,4 @@
-import {postRootSaga} from "CustomCore/entities/post";
+import {postRootSaga} from "@src/entities/post";
 
 const sagas = [
     postRootSaga()

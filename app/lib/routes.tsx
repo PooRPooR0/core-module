@@ -1,6 +1,6 @@
 import {RouteObject} from "react-router-dom";
-import {AboutPage} from "CustomCore/pages/about";
-import {MainPage} from "CustomCore/pages/main";
+import {AboutPage} from "@src/pages/about";
+import {MainPage} from "@src/pages/main";
 
 const routes: RouteObject[] = [
     {
