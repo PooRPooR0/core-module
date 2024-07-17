@@ -19,7 +19,7 @@ const MainPage = ({posts, loading, ...props}: MainPageProps) => {
 
     return (
         <div className={classes.container}>
-            {loading && <div>loading...</div>}
+            {loading && <div>loading.....</div>}
             core main page {a}
             <Link to="/about">About</Link>
         </div>
